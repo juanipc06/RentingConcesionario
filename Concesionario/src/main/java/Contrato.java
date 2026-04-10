@@ -5,4 +5,5 @@ public class Contrato {
     private String fechaInicio;
     private String fechaFin;
     private double precioTotal;
+    private int idCliente;
 }
