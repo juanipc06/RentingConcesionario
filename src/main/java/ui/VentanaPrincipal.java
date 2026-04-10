@@ -39,7 +39,7 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void inicializarUI() {
-        setTitle("Bayarri`s Car — Concesionario Premium");
+        setTitle("Bayarry's Car — Concesionario Premium");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1280, 800);
         setMinimumSize(new Dimension(1024, 650));
@@ -86,10 +86,10 @@ public class VentanaPrincipal extends JFrame {
         JLabel ico  = new JLabel("◈ ");
         ico.setFont(new Font("SansSerif", Font.BOLD, 26));
         ico.setForeground(COLOR_ACENTO);
-        JLabel auto = new JLabel("AUTO");
+        JLabel auto = new JLabel("BAYARRY'S ");
         auto.setFont(new Font("SansSerif", Font.BOLD, 22));
         auto.setForeground(COLOR_TEXTO);
-        JLabel elite = new JLabel("ELITE");
+        JLabel elite = new JLabel("CAR");
         elite.setFont(new Font("SansSerif", Font.BOLD, 22));
         elite.setForeground(COLOR_ACENTO);
         panelLogo.add(ico); panelLogo.add(auto); panelLogo.add(elite);

@@ -136,6 +136,22 @@ public class DialogFormCoche extends JDialog {
         c.setBackground(VentanaPrincipal.COLOR_SUPERFICIE);
         c.setForeground(VentanaPrincipal.COLOR_TEXTO);
         c.setFont(new Font("SansSerif", Font.PLAIN, 13));
+        c.setRenderer(new DefaultListCellRenderer() {
+            @Override
+            public Component getListCellRendererComponent(
+                    JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                if (index == -1) {
+                    setBackground(VentanaPrincipal.COLOR_SUPERFICIE);
+                    setForeground(VentanaPrincipal.COLOR_TEXTO);
+                } else {
+                    setBackground(isSelected ? VentanaPrincipal.COLOR_ACENTO : VentanaPrincipal.COLOR_SUPERFICIE);
+                    setForeground(VentanaPrincipal.COLOR_TEXTO);
+                }
+                setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
+                return this;
+            }
+        });
         return c;
     }
 

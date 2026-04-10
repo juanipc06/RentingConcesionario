@@ -281,6 +281,23 @@ public class PanelVentas extends JPanel {
         cb.setBackground(VentanaPrincipal.COLOR_SUPERFICIE);
         cb.setForeground(VentanaPrincipal.COLOR_TEXTO);
         cb.setFont(new Font("SansSerif", Font.PLAIN, 13));
+        cb.setRenderer(new DefaultListCellRenderer() {
+            @Override
+            public Component getListCellRendererComponent(
+                    JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                // index == -1 es el campo cerrado (valor seleccionado visible)
+                if (index == -1) {
+                    setBackground(VentanaPrincipal.COLOR_SUPERFICIE);
+                    setForeground(VentanaPrincipal.COLOR_TEXTO);
+                } else {
+                    setBackground(isSelected ? VentanaPrincipal.COLOR_ACENTO : VentanaPrincipal.COLOR_SUPERFICIE);
+                    setForeground(VentanaPrincipal.COLOR_TEXTO);
+                }
+                setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
+                return this;
+            }
+        });
     }
 
     private void estilizarTabla(JTable t) {
