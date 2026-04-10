@@ -4,4 +4,5 @@ public class Cliente {
     private String apellido;
     private String telefono;
     private String email;
+    private String eee;
 }
