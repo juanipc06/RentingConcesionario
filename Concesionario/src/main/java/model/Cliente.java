@@ -9,6 +9,7 @@ public class Cliente {
     private String email;
     private String direccion;
 
+
     public Cliente(int id, String nombre, String apellidos, String dni,
                    String telefono, String email, String direccion) {
         this.id = id;
