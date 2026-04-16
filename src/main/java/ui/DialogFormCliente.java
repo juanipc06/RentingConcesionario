@@ -11,7 +11,6 @@ public class DialogFormCliente extends JDialog {
     private Cliente cliente;
     private boolean esNuevo;
     private JTextField txtNombre, txtApellidos, txtDni, txtTelefono, txtEmail, txtDireccion;
-
     public DialogFormCliente(Frame parent, Cliente clienteEditar) {
         super(parent, clienteEditar == null ? "Nuevo Cliente" : "Editar Cliente", true);
         this.esNuevo = (clienteEditar == null);

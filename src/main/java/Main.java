@@ -5,10 +5,8 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         try {
-            // Cross-platform para que respete los colores personalizados
             UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 
-            // Forzar colores oscuros en todos los JComboBox
             Color fondo   = new Color(38, 38, 48);
             Color texto   = new Color(240, 240, 245);
             Color selec   = new Color(220, 38, 38);

@@ -16,7 +16,6 @@ public class DialogPersonalizarCoche extends JDialog {
 
     private JComboBox<String> cbColor;
     private JLabel lblPrecioFinal;
-
     private JCheckBox chkTechoSolar, chkCamara, chkBoston, chkAsientos, chkLED, chkLlantas, chkPiloto, chkCuero;
 
     public DialogPersonalizarCoche(Frame parent, Coche coche) {
