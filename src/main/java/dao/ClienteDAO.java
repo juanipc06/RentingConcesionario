@@ -34,7 +34,7 @@ public class ClienteDAO {
                 return true;
             }
         }
-        return false;
+        return true;
     }
 
     // Buscar por ID
