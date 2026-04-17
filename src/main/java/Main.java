@@ -45,4 +45,5 @@ public class Main {
             ventana.setVisible(true);
         });
     }
+    /*Juan Antonio Perez Camacho*/
 }
