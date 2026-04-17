@@ -14,6 +14,8 @@ public class Main {
             Color selec = new Color(220, 38, 38);
             Color borde = new Color(50, 50, 65);
 
+            /*3 commit en busca del conflicto*/
+
             UIManager.put("ComboBox.background", fondo);
             UIManager.put("ComboBox.foreground", texto);
             UIManager.put("ComboBox.selectionBackground", selec);
